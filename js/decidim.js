@@ -26,7 +26,7 @@
     { id: "menjar", t: "Què mengem i bevem?", a: "Marca el que t'agradaria.", m: 1, o: [
       ["Cata de vi en alguna bodega  ", "Alt Urgell-Cerdanya i blau català."],
       ["La laura compra al super , cuina la nat , neteja la mari tot a caseta ", "Com el tiró (ànec) amb naps."],
-      ["m'agrada la idea de cata pero a casa", "Al Bages o a Costers del Segre; a la zona gairebé no hi ha vinya."],
+      ["m'agrada la idea de cata pero a casa uwu", "Al Bages o a Costers del Segre; a la zona gairebé no hi ha vinya."],
        ] },
     { id: "pressupost", t: "Quant volem gastar en allotjament?", a: "Per persona, per a tota l'estada.", m: 0, o: [
       ["Menys de 100 €", ""], ["Entre 100 i 150 €", ""], ["Entre 150 i 200 €", ""], ["M'és igual", ""] ] },
