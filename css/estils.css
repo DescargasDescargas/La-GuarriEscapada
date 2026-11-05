@@ -648,7 +648,7 @@ a, button, label, summary, select { cursor: url("data:image/svg+xml;utf8,%3Csvg 
 /* Cinta de arriba */
 body::before { content: ""; position: fixed; top: 0; left: 0; right: 0; height: 32px; z-index: 90; background: linear-gradient(90deg, #FF8FD0, #C9A7FF, #7FDDEB); border-bottom: 3px solid #fff; }
 body::after {
-  content: "✨ CAP DE SETMANA DE GUARRIS 🌴 DUTXA: OPCIONAL 🐚 PROMETEM NO TRENCAR RES (GAIRE) 💖 SI LA CASA ES QUEDA NETA, ÉS UN MIRACLE 🌸 UN SOL MOP, ZERO VOLUNTARIS ✨ NO ES JUTJA NINGÚ 💖";
+  content: "✨ CAP DE SETMANA DE GUARRIS 🌴 CAP DE SETMANA DE GUARRIS 🐚 CAP DE SETMANA DE GUARRIS 💖 CAP DE SETMANA DE GUARRIS 🌸 CAP DE SETMANA DE GUARRIS ✨ CAP DE SETMANA DE GUARRIS 💖";
   position: fixed; top: 0; left: 0; z-index: 91; height: 29px; line-height: 29px; white-space: nowrap;
   color: var(--color-tinta); font-weight: 700; font-size: 13px; letter-spacing: .08em; animation: cinta 60s linear infinite;
 }
