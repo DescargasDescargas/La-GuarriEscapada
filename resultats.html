@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="ca">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Resultats · La Guarri-Escapada</title>
+  <meta name="description" content="Dades encara per confirmar de cada casa, amb un missatge a punt per enviar a l'amfitrió.">
+  <meta name="theme-color" content="#FFB8E1">
+
+  <!-- Vista prèvia en compartir (Open Graph / Twitter) -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ca_ES">
+  <meta property="og:title" content="Què falta preguntar · Escapada de desembre 2026">
+  <meta property="og:description" content="Dades encara per confirmar de cada casa, amb un missatge a punt per enviar a l'amfitrió.">
+  <meta property="og:url" content="https://ltrebol.github.io/viatge-pont-desembre/preguntes.html">
+  <meta property="og:image" content="https://ltrebol.github.io/viatge-pont-desembre/img/compartir.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Escapada de desembre, del 4 al 8 de desembre de 2026">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://ltrebol.github.io/viatge-pont-desembre/img/compartir.png">
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🐬%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="css/estils.css">
+  <style>
+    .opcions{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:var(--space-4)}
+    .opcio{display:flex;gap:var(--space-3);align-items:flex-start;padding:16px;cursor:pointer;background:var(--color-fons);border:2px solid var(--color-linia-forta);border-radius:var(--radius-m);transition:background-color var(--motion-curta)}
+    .opcio:hover{background:var(--color-panell)}
+    .opcio:has(input:checked){background:var(--color-lila);border-color:var(--color-tinta)}
+    .opcio input{width:22px;height:22px;margin-top:2px;flex:none;accent-color:var(--color-tinta)}
+    .opcio b{display:block;font-weight:600}.dist{display:inline-block;margin-top:6px;padding:2px 10px;border-radius:999px;background:var(--color-panell);border:2px solid var(--color-linia-forta);font-size:var(--text-petit);font-weight:600}.opcio small{display:block;margin-top:4px;font-size:var(--text-petit);color:var(--color-tinta-2)}
+    .caixa{max-width:640px;padding:18px;background:var(--color-panell);border-radius:var(--radius-m);display:grid;gap:var(--space-3)}
+    .caixa input[type=text]{min-height:44px;padding:0 var(--space-3);border:2px solid var(--color-linia-forta);border-radius:var(--radius-s);background:var(--color-fons)}
+    #resum-text{white-space:pre-wrap;margin:0;font:inherit;font-size:var(--text-petit)}
+    .accions{display:flex;flex-wrap:wrap;gap:var(--space-2)}
+      .files{list-style:none;margin:0;padding:0;display:grid;gap:12px}
+    .fila__cap{display:flex;justify-content:space-between;gap:12px;font-weight:600}
+    .barra-r{height:14px;margin:4px 0;border-radius:999px;background:var(--color-panell);border:2px solid var(--color-linia-forta);overflow:hidden}
+    .barra-r i{display:block;height:100%;background:linear-gradient(90deg,var(--rosa,#FF5FB0),#C9A7FF)}
+    .fila small{color:var(--color-tinta-2)}
+    .xips{display:flex;flex-wrap:wrap;gap:10px}.xip{padding:8px 16px;border-radius:999px;background:var(--color-lila);border:2px solid var(--color-tinta);font-weight:600}
+    .tres{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:var(--space-5)}
+    .tres .preg p{font-size:var(--text-petit)}.tres .preg b{font-weight:600}
+    .quefa{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:var(--space-4)}
+    .quefa .preg{text-align:center}.quefa .gran{font-size:44px;line-height:1}
+  </style>
+</head>
+<body data-pagina="resultats">
+  <a class="salt" href="#contingut">Salta al contingut</a>
+
+  <!-- Navegació: igual a totes les pàgines; app.js marca la pàgina actual. -->
+  <div class="nav-embolcall">
+    <div class="contenidor">
+      <nav class="nav" aria-label="Seccions">
+        <a class="logo" href="index.html" data-pag="inici">
+          <span class="logo__icona" aria-hidden="true"><svg viewBox="0 0 20 20"><path d="M10 3 2 17h16z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M7.2 8 10 10l2.8-2" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></span>
+          <span>La Guarri-Escapada</span>
+        </a>
+        <ul class="nav__enllacos">
+          <li><a href="decidim.html#pla" data-pag="decidim">Pla</a></li><li><a href="decidim.html#zona" data-pag="decidim-zona">Zona</a></li><li><a href="decidim.html#transport" data-pag="decidim-transport">Transport</a></li><li><a href="decidim.html#allotjament" data-pag="decidim-allotjament">Casa</a></li><li><a href="decidim.html#menjar" data-pag="decidim-menjar">Menjar</a></li><li><a href="decidim.html#pressupost" data-pag="decidim-pressupost">Diners</a></li><li data-casas><a href="resum.html" data-pag="resum">Resum</a></li>
+          <li data-casas><a href="cases.html" data-pag="cases">Cases</a></li>
+          <li data-casas><a href="comparar.html" data-pag="comparar">Comparar</a></li>
+          <li data-casas><a href="mapa.html" data-pag="mapa">Mapa</a></li>
+          <li data-casas><a href="activitats.html" data-pag="activitats">Activitats</a></li>
+          <li data-casas><a href="preguntes.html" data-pag="preguntes">Què falta preguntar</a></li>
+          <li data-casas data-nav="votacio"><a href="votacio.html" data-pag="votacio">Votació</a></li>
+          <li data-nav="temps" hidden><a href="temps.html" data-pag="temps">El temps</a></li>
+        </ul>
+        <details class="nav__mobil">
+          <summary>Seccions</summary>
+          <ul>
+            <li><a href="index.html" data-pag="inici">Inici</a></li>
+            <li><a href="decidim.html#pla" data-pag="decidim">Pla</a></li><li><a href="decidim.html#zona" data-pag="decidim-zona">Zona</a></li><li><a href="decidim.html#transport" data-pag="decidim-transport">Transport</a></li><li><a href="decidim.html#allotjament" data-pag="decidim-allotjament">Casa</a></li><li><a href="decidim.html#menjar" data-pag="decidim-menjar">Menjar</a></li><li><a href="decidim.html#pressupost" data-pag="decidim-pressupost">Diners</a></li><li data-casas><a href="resum.html" data-pag="resum">Resum</a></li>
+            <li data-casas><a href="cases.html" data-pag="cases">Cases</a></li>
+            <li data-casas><a href="comparar.html" data-pag="comparar">Comparar</a></li>
+            <li data-casas><a href="mapa.html" data-pag="mapa">Mapa</a></li>
+            <li data-casas><a href="activitats.html" data-pag="activitats">Activitats</a></li>
+            <li data-casas><a href="preguntes.html" data-pag="preguntes">Què falta preguntar</a></li>
+            <li data-casas data-nav="votacio"><a href="votacio.html" data-pag="votacio">Votació</a></li>
+            <li data-nav="temps" hidden><a href="temps.html" data-pag="temps">El temps</a></li>
+          </ul>
+        </details>
+      </nav>
+    </div>
+  </div>
+
+  <main id="contingut" class="pagina">
+    <section class="seccio"><div class="contenidor">
+      <div class="seccio__cap"><div><h1>Els resultats!</h1>
+      <p>Han respost la Nat, la Maria i la Laura. Cap de setmana del 30 de novembre al 2 de desembre. Veredicte del comitè de guarris:</p></div>
+      <a class="boto boto--ple" href="decidim.html">Tornar a les preguntes</a></div>
+    </div></section>
+
+    <section class="seccio"><div class="contenidor">
+      <div class="seccio__cap"><div><h2>Per unanimitat (3/3)</h2><p>El que ens agrada a totes. Aquí no hi ha discussió.</p></div></div>
+      <div class="xips"><span class="xip">Passejar i fer una excursió tranquil·la</span><span class="xip">Gastronomia</span><span class="xip">Cerdanya</span><span class="xip">Ripollès</span><span class="xip">Girona i Empordà</span><span class="xip">Cotxe propi, compartit</span><span class="xip">Tren</span></div>
+    </div></section>
+
+    <section class="seccio"><div class="contenidor">
+      <div class="seccio__cap"><div><h2>Resposta per resposta</h2><p>Com més ple, més vots. Sota cada barra, qui ho ha triat.</p></div></div>
+      <div class="preguntes"><div class="preg"><h3>🎯 Pla</h3><ul class="files"><li class="fila tots"><div class="fila__cap"><span>Passejar i fer una excursió tranquil·la</span><b>3/3</b></div><div class="barra-r"><i style="width:100%"></i></div><small>Nat, Maria, Laura</small></li><li class="fila tots"><div class="fila__cap"><span>Gastronomia</span><b>3/3</b></div><div class="barra-r"><i style="width:100%"></i></div><small>Nat, Maria, Laura</small></li><li class="fila"><div class="fila__cap"><span>Banys termals i relax</span><b>2/3</b></div><div class="barra-r"><i style="width:67%"></i></div><small>Maria, Laura</small></li><li class="fila"><div class="fila__cap"><span>Dia de casa: jocs, pel·lis i festa</span><b>2/3</b></div><div class="barra-r"><i style="width:67%"></i></div><small>Nat, Laura</small></li><li class="fila"><div class="fila__cap"><span>Poble</span><b>1/3</b></div><div class="barra-r"><i style="width:33%"></i></div><small>Nat</small></li></ul></div><div class="preg"><h3>🗺️ Zona</h3><ul class="files"><li class="fila tots"><div class="fila__cap"><span>Cerdanya</span><b>3/3</b></div><div class="barra-r"><i style="width:100%"></i></div><small>Nat, Maria, Laura</small></li><li class="fila tots"><div class="fila__cap"><span>Ripollès</span><b>3/3</b></div><div class="barra-r"><i style="width:100%"></i></div><small>Nat, Maria, Laura</small></li><li class="fila tots"><div class="fila__cap"><span>Girona i Empordà</span><b>3/3</b></div><div class="barra-r"><i style="width:100%"></i></div><small>Nat, Maria, Laura</small></li><li class="fila"><div class="fila__cap"><span>Garrotxa</span><b>2/3</b></div><div class="barra-r"><i style="width:67%"></i></div><small>Maria, Laura</small></li><li class="fila"><div class="fila__cap"><span>Priorat</span><b>1/3</b></div><div class="barra-r"><i style="width:33%"></i></div><small>Nat</small></li></ul></div><div class="preg"><h3>🚗 Transport</h3><ul class="files"><li class="fila tots"><div class="fila__cap"><span>Cotxe propi, compartit</span><b>3/3</b></div><div class="barra-r"><i style="width:100%"></i></div><small>Nat, Maria, Laura</small></li><li class="fila tots"><div class="fila__cap"><span>Tren</span><b>3/3</b></div><div class="barra-r"><i style="width:100%"></i></div><small>Nat, Maria, Laura</small></li></ul></div><div class="preg"><h3>🏡 Casa</h3><ul class="files"><li class="fila"><div class="fila__cap"><span>A tocar d'un poble: bar i restaurant a peu</span><b>2/3</b></div><div class="barra-r"><i style="width:67%"></i></div><small>Nat, Laura</small></li><li class="fila"><div class="fila__cap"><span>Aïllada, per poder fer festa</span><b>1/3</b></div><div class="barra-r"><i style="width:33%"></i></div><small>Maria</small></li></ul></div><div class="preg"><h3>🍷 Menjar i beure</h3><ul class="files"><li class="fila"><div class="fila__cap"><span>Cata de vi en alguna bodega</span><b>2/3</b></div><div class="barra-r"><i style="width:67%"></i></div><small>Nat, Laura</small></li><li class="fila"><div class="fila__cap"><span>Cuinar a caseta, amb tasques repartides</span><b>2/3</b></div><div class="barra-r"><i style="width:67%"></i></div><small>Maria, Laura</small></li></ul></div><div class="preg"><h3>💸 Allotjament per persona</h3><ul class="files"><li class="fila"><div class="fila__cap"><span>Entre 100 i 150 €</span><b>2/3</b></div><div class="barra-r"><i style="width:67%"></i></div><small>Maria, Laura</small></li><li class="fila"><div class="fila__cap"><span>Menys de 100 €</span><b>1/3</b></div><div class="barra-r"><i style="width:33%"></i></div><small>Nat</small></li></ul></div></div>
+    </div></section>
+
+    <section class="seccio"><div class="contenidor">
+      <div class="seccio__cap"><div><h2>Aquí hi ha tema</h2><p>Coses on no coincidim i que cal parlar.</p></div></div>
+      <div class="tres">
+        <div class="preg"><h3>🏡 Poble o aïllada?</h3><p>Dues volen una casa <b>a tocar d'un poble</b>, per anar al bar a peu. La Maria la vol <b>aïllada</b>, per fer festa sense molestar. Idea: casa a les afores d'un poble.</p></div>
+        <div class="preg"><h3>💸 Pressupost</h3><p>Dues diuen <b>100-150 €</b> i la Nat, <b>menys de 100 €</b>. Un objectiu raonable és <b>al voltant de 100 €</b> per persona.</p></div>
+        <div class="preg"><h3>🗺️ Tres zones empatades</h3><p><b>Cerdanya, Ripollès i Girona i Empordà</b> tenen 3/3. La Garrotxa en té 2 i el Priorat, 1 (només la Nat).</p></div>
+      </div>
+    </div></section>
+
+    <section class="seccio"><div class="contenidor">
+      <div class="seccio__cap"><div><h2>Qui fa què a caseta</h2><p>Repartiment oficial, segons les respostes.</p></div></div>
+      <div class="quefa">
+        <div class="preg"><div class="gran">🛒</div><h3>Laura</h3><p>Compra al súper</p></div>
+        <div class="preg"><div class="gran">🍳</div><h3>Nat</h3><p>Cuina</p></div>
+        <div class="preg"><div class="gran">🧹</div><h3>Mari</h3><p>Neteja tot a caseta</p></div>
+      </div>
+    </div></section>
+
+    <section class="seccio"><div class="contenidor">
+      <div class="seccio__cap"><div><h2>Les tres candidates</h2><p>Totes tres tenen 3/3. Distàncies aproximades des de Barcelona.</p></div></div>
+      <div class="tres">
+        <div class="preg"><h3>🛋️ La còmoda: Girona i Empordà</h3><p>La més a prop (~1 h 10 – 2 h). Pobles de pedra, vins de la DO Empordà per a la cata i escapada termal a Caldes de Malavella. Menys ambient de muntanya.</p></div>
+        <div class="preg"><h3>♨️ La de postal: Cerdanya</h3><p>(~2 h – 2 h 30). Banys termals a prop, Puigcerdà amb bars i restaurants i possibilitat de neu. Casa rural amb vistes.</p></div>
+        <div class="preg"><h3>🌲 La verda: Ripollès</h3><p>(~1 h 45 – 2 h 15). Pobles de pedra, excursions, Camprodon amb ambient i cuina de muntanya. Pot nevar.</p></div>
+      </div>
+    </div></section>
+
+    <section class="seccio"><div class="contenidor">
+      <div class="seccio__cap"><div><h2>Falta decidir</h2></div></div>
+      <div class="tres">
+        <div class="preg"><h3>👯 Quantes serem?</h3><p>Ningú ha contestat. Ho necessitem per buscar una casa de la mida adequada.</p></div>
+        <div class="preg"><h3>📍 Zona final</h3><p>Triar entre les tres candidates (o desempatar amb preu i temps de viatge).</p></div>
+        <div class="preg"><h3>🏠 Cases</h3><p>Quan tinguem zona, tornem a activar les cases i comparem.</p></div>
+      </div>
+    </div></section>
+  </main>
+
+  <footer class="peu">
+    <div class="contenidor">
+      <p>Última actualització: <span id="ultima-actualitzacio"></span>. Cap de setmana del 30 de novembre al 2 de desembre.</p>
+    </div>
+  </footer>
+
+  <p class="avis-copiat" id="avis-copiat" role="status" aria-live="polite"></p>
+
+  <script src="js/dades.js"></script>
+  <script src="js/app.js"></script>
+  
+</body>
+</html>
