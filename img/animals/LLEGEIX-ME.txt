@@ -1,0 +1,12 @@
+Posa aqui les fotos dels animals, amb aquests noms EXACTES (en minuscules i acabats en .jpg):
+
+  dofi.jpg      -> dofi (es la foto gran del mig i la del logo)
+  flamenc.jpg   -> flamenc
+  porquet.jpg   -> porquet (broma de "guarris")
+  tortuga.jpg   -> tortuga marina
+
+Consells:
+- Que siguin quadrades o amb l'animal al centre (es retallen en cercle).
+- Que pesin menys de 300 KB cada una (si no, la web carrega lenta).
+- Si falta alguna foto, la web mostra l'emoji en el seu lloc.
+- Fotos amb llicencia lliure: unsplash.com, pexels.com, pixabay.com o Wikimedia Commons.

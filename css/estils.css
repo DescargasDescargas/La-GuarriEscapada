@@ -639,16 +639,16 @@ input[type="range"] { width: 100%; min-height: 44px; accent-color: var(--color-t
 ::selection { background: var(--mostassa); color: var(--color-tinta); }
 html { scrollbar-color: var(--rosa) #FFE0F5; scroll-padding-top: 120px; }
 body {
-  padding-top: 32px; background-color: #FFE6F7; cursor: url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32'%3E%3Ctext y='26' font-size='26'%3E🐬%3C/text%3E%3C/svg%3E") 4 4, auto;
-  background-image: url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='280' height='280'%3E%3Cg opacity='.5'%3E%3Ctext x='24' y='90' font-size='44' transform='rotate(-14 40 70)'%3E🐬%3C/text%3E%3Ctext x='176' y='64' font-size='30'%3E🐚%3C/text%3E%3Ctext x='150' y='230' font-size='40' transform='rotate(10 160 210)'%3E🌴%3C/text%3E%3Ctext x='30' y='252' font-size='26'%3E💖%3C/text%3E%3Ctext x='230' y='150' font-size='24'%3E✨%3C/text%3E%3C/g%3E%3C/svg%3E")), linear-gradient(180deg, #FFD9F1 0%, #E9DBFF 50%, #CDEFFF 100%);
+  padding-top: 32px; background-color: #FFE6F7; cursor: url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32'%3E%3Ctext y='26' font-size='26'%3E💖%3C/text%3E%3C/svg%3E") 4 4, auto;
+  background-image: url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='280' height='280'%3E%3Cg opacity='.5'%3E%3Ctext x='24' y='90' font-size='40' transform='rotate(-14 40 70)'%3E🌸%3C/text%3E%3Ctext x='176' y='64' font-size='30'%3E🐚%3C/text%3E%3Ctext x='150' y='230' font-size='40' transform='rotate(10 160 210)'%3E🌴%3C/text%3E%3Ctext x='30' y='252' font-size='26'%3E💖%3C/text%3E%3Ctext x='230' y='150' font-size='24'%3E✨%3C/text%3E%3C/g%3E%3C/svg%3E")), linear-gradient(180deg, #FFD9F1 0%, #E9DBFF 50%, #CDEFFF 100%);
   background-size: 280px 280px, 100% 100%; background-attachment: scroll, fixed;
 }
-a, button, label, summary, select { cursor: url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32'%3E%3Ctext y='26' font-size='26'%3E🐬%3C/text%3E%3C/svg%3E") 4 4, pointer; }
+a, button, label, summary, select { cursor: url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32'%3E%3Ctext y='26' font-size='26'%3E💖%3C/text%3E%3C/svg%3E") 4 4, pointer; }
 
 /* Cinta de arriba */
 body::before { content: ""; position: fixed; top: 0; left: 0; right: 0; height: 32px; z-index: 90; background: linear-gradient(90deg, #FF8FD0, #C9A7FF, #7FDDEB); border-bottom: 3px solid #fff; }
 body::after {
-  content: "🐬 CAP DE SETMANA DE GUARRIS 🌴 DUTXA: OPCIONAL 🐚 PROMETEM NO TRENCAR RES (GAIRE) 🦩 SI LA CASA ES QUEDA NETA, ÉS UN MIRACLE 💖 UN SOL MOP, ZERO VOLUNTARIS ✨ NO ES JUTJA NINGÚ 🐬";
+  content: "✨ CAP DE SETMANA DE GUARRIS 🌴 DUTXA: OPCIONAL 🐚 PROMETEM NO TRENCAR RES (GAIRE) 💖 SI LA CASA ES QUEDA NETA, ÉS UN MIRACLE 🌸 UN SOL MOP, ZERO VOLUNTARIS ✨ NO ES JUTJA NINGÚ 💖";
   position: fixed; top: 0; left: 0; z-index: 91; height: 29px; line-height: 29px; white-space: nowrap;
   color: var(--color-tinta); font-weight: 700; font-size: 13px; letter-spacing: .08em; animation: cinta 60s linear infinite;
 }
@@ -660,10 +660,10 @@ body::after {
 /* Títulos de purpurina */
 h1, h2 { font-family: var(--font-titol); font-weight: 400; letter-spacing: 0; line-height: 1.3; color: var(--color-tinta); text-shadow: 2px 2px 0 #fff, 4px 4px 0 var(--rosa), 6px 6px 0 var(--turquesa); }
 h3 { font-weight: 600; letter-spacing: 0; }
-.hero h1::after { content: " 🐬"; text-shadow: none; }
+.hero h1::after { content: " ✨"; text-shadow: none; }
 .seccio__cap h2::after { content: " ✨"; text-shadow: none; }
 .hero__nota::after { content: "Dutxa: opcional. Dignitat: a l'equipatge de mà."; display: block; margin-top: 8px; font-weight: 600; color: var(--rosa-fort); }
-.peu::before { content: "🐚 🐬 🌴 🦩 🐚 🐬 🌴 🦩 🐚 🐬"; display: block; text-align: center; font-size: 28px; letter-spacing: .25em; margin-bottom: 14px; }
+.peu::before { content: "🐚 ✨ 🌴 💖 🐚 ✨ 🌴 💖 🐚 ✨"; display: block; text-align: center; font-size: 28px; letter-spacing: .25em; margin-bottom: 14px; }
 .peu::after { box-sizing: border-box; content: "Cap guarri va resultar ferit en la creació d'aquesta web."; display: block; max-width: calc(var(--max-ample) + 2 * var(--marge)); margin: 14px auto 0; padding-inline: var(--marge); font-weight: 600; }
 .peu { background: linear-gradient(180deg, #BFF0F7, #7FDDEB); border-top: 4px solid #fff; color: var(--color-tinta); }
 
@@ -674,22 +674,25 @@ h3 { font-weight: 600; letter-spacing: 0; }
 }
 .escena { position: relative; height: 380px; max-width: 520px; }
 .escena::before { content: ""; position: absolute; inset: 20px 40px; border-radius: 50%; border: 4px solid #fff; box-shadow: 0 0 30px #fff; background: radial-gradient(circle at 30% 25%, #fff 0 7%, rgba(255,255,255,.45) 8% 30%, rgba(190,240,255,.55) 31%); }
-.escena .e { position: absolute; line-height: 1; filter: drop-shadow(0 6px 0 rgba(255,255,255,.7)); }
-.e1 { font-size: 170px; left: 90px; top: 70px; transform: rotate(-12deg); }
-.e2 { font-size: 90px; right: 10px; bottom: 10px; } .e3 { font-size: 60px; left: 10px; bottom: 30px; }
-.e4 { font-size: 80px; right: 40px; top: 20px; } .e5 { font-size: 44px; left: 30px; top: 20px; }
+.escena .e { position: absolute; display: grid; place-items: center; overflow: hidden; line-height: 1; border-radius: 50%; background: #fff; border: 5px solid #fff; box-shadow: 0 0 0 4px var(--rosa), 0 10px 20px rgba(224, 24, 127, .35); }
+.escena .e img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.e1 { width: 230px; height: 230px; font-size: 100px; left: 70px; top: 80px; }
+.e4 { width: 140px; height: 140px; font-size: 60px; right: 20px; top: 10px; }
+.e3 { width: 120px; height: 120px; font-size: 52px; left: 0; bottom: 20px; }
+.e2 { width: 130px; height: 130px; font-size: 56px; right: 40px; bottom: 0; }
+.escena .e5 { width: auto; height: auto; border: 0; box-shadow: none; background: none; overflow: visible; font-size: 48px; left: 40px; top: 10px; filter: drop-shadow(0 4px 0 rgba(255,255,255,.7)); }
 @media (prefers-reduced-motion: no-preference) {
   @keyframes salta { 0%, 100% { translate: 0 0; } 50% { translate: 0 -22px; } }
   .e1 { animation: salta 2.8s ease-in-out infinite; } .e4 { animation: salta 3.6s ease-in-out infinite -1s; } .e5 { animation: salta 2.2s ease-in-out infinite -.5s; }
 }
-@media (max-width: 980px) { .escena { height: 300px; } .e1 { font-size: 130px; left: 60px; top: 50px; } }
-@media (max-width: 600px) { .hero { padding-top: 118px; padding-bottom: 60px; } .escena { height: 250px; } .e1 { font-size: 110px; } }
+@media (max-width: 980px) { .escena { height: 330px; } .e1 { width: 180px; height: 180px; left: 50px; top: 70px; } }
+@media (max-width: 600px) { .hero { padding-top: 118px; padding-bottom: 60px; } .escena { height: 300px; } .e1 { width: 150px; height: 150px; left: 40px; } .e4 { width: 100px; height: 100px; } .e3 { width: 90px; height: 90px; } .e2 { width: 100px; height: 100px; right: 20px; } }
 
 /* Menú */
 .nav-embolcall.enganxada { background: rgba(255, 224, 245, .94); border-bottom: 3px solid #fff; }
 .nav { background: linear-gradient(90deg, #fff, #FFF0FA); border: 3px solid #fff; border-radius: 999px; box-shadow: 0 0 0 3px var(--rosa), 0 8px 18px rgba(224, 24, 127, .3); padding: 8px 20px; }
 .logo { font-family: var(--font-titol); font-weight: 400; font-size: 19px; color: var(--rosa-fort); }
-.logo::after { content: "🐬"; }
+.logo::after { content: ""; width: 30px; height: 30px; border-radius: 50%; background: url("../img/animals/dofi.jpg") center / cover, #FFD0EC; border: 2px solid #fff; box-shadow: 0 0 0 2px var(--rosa); }
 .logo__icona { border-radius: 50%; background: #FFD0EC; border: 2px solid var(--rosa-fort); }
 .nav__enllacos a:hover, .nav__enllacos a[aria-current="page"], .nav__mobil a[aria-current="page"] { text-decoration: underline wavy var(--rosa); text-decoration-thickness: 2px; text-underline-offset: 6px; }
 .nav__mobil summary { border: 3px solid var(--rosa); border-radius: 999px; background: #fff; }
